@@ -2,6 +2,8 @@
 
 API that takes JSON-formatted opening hours of a restaurant as an input and outputs hours in human readable format.
 
+Pull the project, run the project and route to /swagger
+
 The JSON-format data is structrued into C# class, convert property using Newtonsoft.JSON library and annotate the property conrresponding to the json field
  ```csharp
     public partial class RestaurantOpeningHour
