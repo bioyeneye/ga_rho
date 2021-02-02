@@ -103,6 +103,15 @@ The JSON-format data is structrued into C# class, convert property using Newtons
     }
 ```
 
+### Project Structure
+
+The project is built using ASPNet Core API with the some custom folder pattern
+  - Services - Contains business login implementation
+  - Data - Contains data structures used in the application
+  - Utilities - Helper class
+  - Filters - Filters used in the application
+  - Extensions - C# extension class for ServiceCollection for swagger etc.
+
 #### Tell us what do you think about the data format. Is the current JSON structure the best  way to store that kind of data or can you come up with a better version? There are no right answers here
 
 The data structure is not in the best formart, Kindly check format below
