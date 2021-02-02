@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GlobalAccelerex.API</name>
+    </assembly>
+    <members>
+        <member name="T:GlobalAccelerex.API.Controllers.RestaurantOpeningHoursController">
+            <summary>
+            Resource for Restaurant Opening Hours
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Controllers.RestaurantOpeningHoursController.#ctor(GlobalAccelerex.API.Services.IRestaurantOpeningHourService)">
+            <summary>
+            Defaulr consructor
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="T:GlobalAccelerex.API.Data.RestaurantOpeningHour">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:GlobalAccelerex.API.Extensions.ServiceCollectionsExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:GlobalAccelerex.API.Services.IRestaurantOpeningHourService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:GlobalAccelerex.API.Services.RestaurantOpeningHourService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Services.RestaurantOpeningHourService.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Services.RestaurantOpeningHourService.ProcessRestaurantOpeningHours(GlobalAccelerex.API.Data.RestaurantOpeningHour)">
+            <summary>
+            Process restaur
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response`1.HasResult">
+            <summary>
+            Indicates if the response contains a result
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response`1.Result">
+            <summary>
+            The result of the response
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response`1.Success(`0)">
+            <summary>
+            Creates a successful response with a given result object
+            </summary>
+            <param name="result">The result object to return with the response</param>
+            <returns>The response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response`1.Failed(System.String)">
+            <summary>
+            Creates a failed result. It takes no result object
+            </summary>
+            <param name="errorMessage">The error message returned with the response</param>
+            <returns>The created response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response`1.ValidationError(System.Collections.Generic.List{System.String})">
+            <summary>
+            Creates a validation error response, indicating the input was invalid
+            </summary>
+            <param name="validationMessages">The validation message</param>
+            <returns>The Response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response`1.Warning(System.String,`0)">
+            <summary>
+            Creates a warning result. The warning result is successful, but might have issues that should be addressed or logged
+            </summary>
+            <param name="warningMessage">The warning returned with the response</param>
+            <param name="result">The result object</param>
+            <returns>The created response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response`1.Empty">
+            <summary>
+            Creates an empty result. The empty result is successful, but might have issues that should be addressed or logged
+            </summary>
+            <returns>The created response object</returns>
+        </member>
+        <member name="T:GlobalAccelerex.API.Utilities.Response">
+            <summary>
+            A simple response object with no returned object. Just indicates successful or failed requests
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GlobalAccelerex.API.Utilities.Response"/> class. 
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.HasResult">
+            <summary>
+            Indicates if the response contains a result
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.Result">
+            <summary>
+            The result of the response
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.Successful">
+            <summary>
+            Indicates if the response is successful or not. Warning or success result type indicate success
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.ResultType">
+            <summary>
+            The result type
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.Message">
+            <summary>
+            The message returned with the response
+            </summary>
+        </member>
+        <member name="P:GlobalAccelerex.API.Utilities.Response.ValidationMessages">
+            <summary>
+            The validation error messages returned with the response
+            </summary>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.Success">
+            <summary>
+            Creates a successful response with a given result object
+            </summary>
+            <returns>The response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.Failed(System.String)">
+            <summary>
+            Creates a failed result. It takes no result object
+            </summary>
+            <param name="errorMessage">The error message returned with the response</param>
+            <returns>The created response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.ValidationError(System.Collections.Generic.List{System.String})">
+            <summary>
+            Creates a validation error response, indicating the input was invalid
+            </summary>
+            <param name="validationMessages">The validation message</param>
+            <returns>The Response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.Warning(System.String)">
+            <summary>
+            Creates a warning result. The warning result is successful, but might have issues that should be addressed or logged
+            </summary>
+            <param name="warningMessage">The warning returned with the response</param>
+            <returns>The created response object</returns>
+        </member>
+        <member name="M:GlobalAccelerex.API.Utilities.Response.Empty">
+            <summary>
+            Creates an empty result. The empty result is successful, but might have issues that should be addressed or logged
+            </summary>
+            <returns>The created response object</returns>
+        </member>
+    </members>
+</doc>
